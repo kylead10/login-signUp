@@ -12,16 +12,18 @@ const Login = () => {
         <div className='underline'></div>
       </div>
       <div className='inputs'>
-        <BsFillFilePersonFill className='icon' />
-        <input type='text' placeholder='Your Name' />
-      </div>
-      <div className='inputs'>
-        <MdEmail className='icon' />
-        <input type='email' placeholder='Your Email' />
-      </div>
-      <div className='inputs'>
-        <RiLockPasswordFill className='icon' />
-        <input type='password' placeholder='Your Password' />
+        <div className='input'>
+          <BsFillFilePersonFill className='icon' />
+          <input type='text' placeholder='Name' />
+        </div>
+        <div className='input'>
+          <MdEmail className='icon' />
+          <input type='email' placeholder='Email' />
+        </div>
+        <div className='input'>
+          <RiLockPasswordFill className='icon' />
+          <input type='password' placeholder='Password' />
+        </div>
       </div>
       <div className='forgot-password'>
         Forgot Password? <span>Click Here!</span>

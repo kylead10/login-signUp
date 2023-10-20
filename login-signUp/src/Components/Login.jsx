@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Components/Login.css';
 import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { BsFillFilePersonFill } from 'react-icons/bs';

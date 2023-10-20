@@ -21,3 +21,17 @@
   font-size: 48px;
   font-weight: 700;
 }
+
+.underline {
+  width: 62px;
+  height: 6px;
+  background: #3c009d;
+  border-radius: 9px;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 25px;
+}

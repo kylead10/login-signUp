@@ -14,10 +14,15 @@ const Login = () => {
         <div className='underline'></div>
       </div>
       <div className='inputs'>
-        <div className='input'>
-          <BsFillFilePersonFill className='icon' />
-          <input type='text' placeholder='Name' />
-        </div>
+        {action === 'Login' ? (
+          <div></div>
+        ) : (
+          <div className='input'>
+            <BsFillFilePersonFill className='icon' />
+            <input type='text' placeholder='Name' />
+          </div>
+        )}
+
         <div className='input'>
           <MdEmail className='icon' />
           <input type='email' placeholder='Email' />
@@ -27,15 +32,30 @@ const Login = () => {
           <input type='password' placeholder='Password' />
         </div>
       </div>
-      <div className='forgot-password'>
-        Forgot Password? <span>Click Here!</span>
-      </div>
+      {action === 'Sign Up' ? (
+        <div></div>
+      ) : (
+        <div className='forgot-password'>
+          Forgot Password? <span>Click Here!</span>
+        </div>
+      )}
+
       <div className='submit-container'>
-        <div className={action === 'Login' ? 'submit gray' : 'submit'}>
+        <div
+          className={action === 'Login' ? 'submit gray' : 'submit'}
+          onClick={() => {
+            setAction('Sign Up');
+          }}
+        >
           Sign Up
         </div>
         <div style={{ margin: '13px' }}></div>
-        <div className={action === 'Sign Up' ? 'submit gray' : 'submit'}>
+        <div
+          className={action === 'Sign Up' ? 'submit gray' : 'submit'}
+          onClick={() => {
+            setAction('Login');
+          }}
+        >
           Login
         </div>
       </div>
